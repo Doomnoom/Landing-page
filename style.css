@@ -1,6 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -13,6 +15,11 @@ ul{
 
 .nav ul{
     display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #e5e7eb;
 }
 
 .square{
@@ -31,25 +38,75 @@ ul{
 .register,
 .footer{
     background-color: #1f2937;
+    justify-content: space-around;
+    padding: 8px;
 }
+
+.register,
+.info,
+.quote,
+.adspace{
+    padding: 64px;
+}
+
 
 .header{
     display: flex;
-    justify-content: space-between;
+}
+
+.logo,
+.footer{
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+.nav li{
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .register{
     display: flex;
 }
 
+.register .title{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+}
+
+.register .content{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
 .info{
     display: flex;
+    justify-content: center;
 }
 
 .quote{
     background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: light-italic;
+    color: #1f2937;
+}
+
+.adspace{
+    display: flex;
+    justify-content: center;
 }
 
 .ad{
+    display: flex;
     background-color: #3882fb;
+    padding: 8px;
+    height: 50px;
+    width: 600px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
 }

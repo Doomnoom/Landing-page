@@ -32,7 +32,7 @@ a{
 
 .square{
     border: solid 4px blue;
-    height: 100px;
+    height: 125px;
     width: 125px;
 }
 
@@ -101,9 +101,22 @@ button{
 
 .info{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
-    gap: 128px;
+    padding: 24px;
+    gap: 48px;;
+}
+
+.info .title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
 .container{
@@ -127,6 +140,12 @@ button{
     padding-right: 256px;
 }
 
+.quote .credit{
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .adspace{
     display: flex;
     justify-content: center;
@@ -145,6 +164,10 @@ button{
 
 .ad .title{
     font-weight: bold;
+}
+
+.ad .text{
+    font-size: 12px;
 }
 
 

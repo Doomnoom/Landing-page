@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -15,6 +16,13 @@ ul{
 
 .nav ul{
     display: flex;
+    gap: 16px;
+}
+
+.square,
+.pic,
+.ad{
+    border-radius: 5px;
 }
 
 a{
@@ -25,13 +33,21 @@ a{
 .square{
     border: solid 4px blue;
     height: 100px;
-    width: 100px;
+    width: 125px;
 }
 
 .pic{
     height: 150px;
     width: 350px;
     background-color: grey;
+}
+
+button{
+    background-color: #3882fb;
+    color: #f9faf8;
+    border: solid #f9faf8 1px;
+    border-radius: 5px;
+    padding: 8px;
 }
 
 .header,
@@ -54,8 +70,7 @@ a{
     display: flex;
 }
 
-.logo,
-.footer{
+.logo{
     font-size: 18px;
     color: #f9faf8;
 }
@@ -67,29 +82,49 @@ a{
 
 .register{
     display: flex;
+    justify-content: center;
+    gap: 124px;
 }
 
 .register .title{
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: bold;
+    width: 400px;
     color: #f9faf8;
 }
 
 .register .content{
-    font-size: 18px;
+    font-size: 16px;
     color: #e5e7eb;
+    width: 400px
 }
 
 .info{
     display: flex;
     justify-content: center;
+    text-align: center;
+    gap: 128px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+
 .quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #e5e7eb;
     font-size: 36px;
     font-style: light-italic;
     color: #1f2937;
+    padding-left: 256px;
+    padding-right: 256px;
 }
 
 .adspace{
@@ -99,14 +134,23 @@ a{
 
 .ad{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #3882fb;
-    padding: 8px;
+    color: #f9faf8;
+    padding: 16px 32px;
     height: 50px;
     width: 600px;
+}
+
+.ad .title{
+    font-weight: bold;
 }
 
 
 .footer{
     display: flex;
     justify-content: center;
+    font-size: 12px;
+    color: #f9faf8
 }
